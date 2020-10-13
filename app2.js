@@ -9,9 +9,14 @@ menuItems.forEach(item => {
 function scrollToIdOnClick(event){
     event.preventDefault();
     const elemento = event.target;
-    const id = elemento.getAttribute('id');
-    const section = document.querySelector(id).getBoundingClientRect().top;
+    var id = elemento.getAttribute('id');
 
+    if (id == null){
+        var id = elemento.getAttribute('href');
+    }
+    
+    const section = document.querySelector(id).getBoundingClientRect().top ;
+    
     window.scroll({
         top: section,
         behavior: "smooth"
@@ -28,9 +33,14 @@ iconMenu[0].addEventListener('click', () => {
     if (menu.classList.contains("hide")){
         menu.classList.add("show");
         menu.classList.remove("hide");
+        menu.style.height = "20px";
+        menu.style.marginBottom = "100px"
     }else{
         menu.classList.add("hide");
         menu.classList.remove("show");
+        menu.style.height = "0";
+        menu.style.marginBottom = "0"
+        
     }
     
 });
