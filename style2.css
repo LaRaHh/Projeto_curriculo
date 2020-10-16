@@ -20,10 +20,10 @@ a {
 img {
     max-width: 100%;
     width: 100%;
-    border-radius: 5px;
-    display: block;
+	height:auto;
+    
 }
-  
+
 /* GRID GERAL */
 
 .estrutura {
@@ -136,7 +136,7 @@ img {
     background: rgba(0,0,0,.5);
 }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) {
 .header {
     grid-template-columns: auto;
 }
@@ -146,6 +146,7 @@ img {
 .header nav a {
     font-size: 1em;
 }
+
 }
 
 /*NAVBAR*/
@@ -178,6 +179,7 @@ img {
     transition: .1s ease-out;
     justify-content: space-around;
     align-items: center;
+    border-radius: 5px;
 }
 
 .navbar ul li{
@@ -188,11 +190,69 @@ img {
     background: #B07DFB;
 }
 
-/**@media (max-width: 760px){
-    .navbar {
+@media screen and (max-width: 760px){
 
+    .navbar{
+        display: none;
     }
 }
+
+
+/* MENU */
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.menu-ul{
+    display: none;
+}
+
+.menu-ul li a{
+    display: none;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menu-item{
+    margin: 2px 4px 2px 4px;
+}
+
+.hamburguer{
+    display: none;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hamburguer:focus{
+    outline: none;
+}
+
+
+@media screen and (max-width: 760px){
+    
+    .menu-ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        list-style-type: none;
+    }
+
+
+    .hamburguer{
+        display: block;
+    }
+}
+
 
 /* SIDENAV */
 
@@ -203,18 +263,21 @@ img {
 }
 
 .profile {
-    display: flex;
+    display: flex !important;
     align-items: center;
-    padding-top: 1rem;
-    padding-left: 1rem;
+    
     
 }
 
 .profile-img {
-    display: block;  
-    padding-right: 1rem;
-    max-width: 100%;
+    display: block; 
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 50%;
     border-radius: 5px;
+    max-width: 400px;
+    height: auto;
 }
 
 @media (max-width: 760px) {
@@ -235,25 +298,13 @@ img {
     padding: 0 30px;
 }
 
-.sidenav .profile-img{
-    display: block;
-    margin-left: 100px;
-    margin-right: auto
+.profile-img{
+    display: flex;
+    margin: 0 auto auto 100%;
+    
 }
 }
 
-.hide{
-  opacity: 0;
-  transition: 1s;
-  height: 0;
-}
-
-.show{
-  transition: 1s;
-  opacity: 1;
-  height: 20px;
-
-}
 
 /* CONTENT */
 
@@ -288,6 +339,24 @@ p {
     text-align: justify;
 }
 
+
+.linkExterno{
+	display: block;
+	max-width: 120px;
+	text-align: center;
+	text-decoration: none;
+	padding: 8px 20px 10px 20px;
+	text-transform: uppercase;
+	background-image: linear-gradient(#9B30F9, #84e);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+	border-radius: 4px;
+	padding: 1em;
+}
+
+.linkExterno:hover {
+	background: #a494f5;
+	color: white;
+}
 
 /* TITULO */
 

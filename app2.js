@@ -1,4 +1,4 @@
-//Animação do scroll
+//Animação do scroll Navbar
 
 const menuItems = document.querySelectorAll(".navbar-item a[href^='#']");
 
@@ -24,26 +24,38 @@ function scrollToIdOnClick(event){
     
 }
 
+//Animação do scroll MenuBar
+
+const menuBar = document.querySelectorAll(".menu-ul a[href^='#']");
+
+menuBar.forEach(item =>{
+    item.addEventListener('click', scrollSuave)
+});
+
+function scrollSuave(event){
+    var element = event.target;
+    var id = element.getAttribute('id');
+    console.log(id);
+    
+    if (id == null){
+        var id = element.getAttribute('href');
+    }
+
+    var a = document.querySelector(id);
+    console.log(a);
+
+}
+
 
 //Animação do menu
-const iconMenu = document.querySelectorAll(".icon-menu");
 
-iconMenu[0].addEventListener('click', () => {
-    let menu = document.getElementById("menu");
-    if (menu.classList.contains("hide")){
-        menu.classList.add("show");
-        menu.classList.remove("hide");
-        menu.style.height = "20px";
-        menu.style.marginBottom = "100px"
-    }else{
-        menu.classList.add("hide");
-        menu.classList.remove("show");
-        menu.style.height = "0";
-        menu.style.marginBottom = "0"
-        
-    }
-    
+
+const menuH = document.getElementById('hamburguer');
+const menuUL = document.getElementById('menu-ul');
+menuH.addEventListener('click', () => {
+    menuUL.classList.toggle('menu-ul');
 });
+
 
 //Animação do título
 

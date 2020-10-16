@@ -11,14 +11,26 @@
     <article class="estrutura">
     
         <header class="header">
-          <a href="https://wlcsolucoes.com.br/" target="blank" class="logo"><img src="img/logo.jpg" alt="WLCsoluções"></a>
-          <nav>
-            <ul>
-              <li><a href="#" class="icon-menu"><img src="img/menu.svg" alt="Menu"></a></li>
+          
+          <nav id="menu" class="menu">
+            <a href="https://wlcsolucoes.com.br/" target="blank" class="logo">
+              <img src="img/logo.jpg" alt="WLCsoluções"></a>
+            <button class="hamburguer" id="hamburguer">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="menu-ul" id="menu-ul">
+              <li><a href="#inf" class="menu-item"> <i id="#inf" class="fas fa-info-circle"></i> </a></li>
+              <li><a href="#use" class="menu-item"> <i id="#use" class="fas fa-user"></i> </a></li>
+              <li><a href="#mapa" class="menu-item"> <i id="#mapa" class="fas fa-map-marked-alt"></i> </a></li>
+              <li><a href="#cap" class="menu-item"> <i id="#cap" class="fas fa-graduation-cap"></i> </a></li>
+              <li><a href="#lange" class="menu-item"> <i id="#lange" class="fas fa-language"></i> </a></li>
+              <li><a href="#produ" class="menu-item"> <i id="#inf" class="fas fa-file-word"></i> </a></li>
             </ul>
-        </header>
-          <nav id="menu" class="navbar hide">
-            <ul class="navbar-item">
+          </nav>
+           
+          </header>
+          <nav id="menu-bar" class="navbar">
+            <ul id="navbar-item" class="navbar-item">
               <li>
                 <a href="#info">
                   <img id="#info" src="img/informacoes.svg" alt="informações" />
@@ -52,22 +64,25 @@
             </ul>
 
         </nav>
+
+       
         
-        <nav class="sidenav">
+        <nav id="sidenav" class="sidenav">
             <ul>
             <li>
               <div class="profile">
                 <img  class = "profile-img" src="img/foto.jpeg" alt="Foto do currículo"/></div>
         </nav>
         
-        <section class="content">
+        <section  id="content" class="content">
         
           <div class="titulo">
             <h1>Larah Lira de Mendonça</h1>
           </div>
 
           <div>
-            <section id="info">
+            <section id="info" >
+              <a name="inf"></a>
                 <div class="tooltip titulo2">
                 <h2><span class="tooltiptext">Pequeno resumo</span>Sobre mim</h2></div>
                 <p>Estudante do curso técnico em informática pelo IFAL - Instituto Federal de Alagoas. 
@@ -76,30 +91,36 @@
                     pelo professor Estevam do iFAL-campus Maceió, pelo projeto intitulado "O neocontratualismo
                     de Habermas e a crítica feminista de Pateman". Com duração de 1 ano, o projeto PIBIC fornecido e 
                     fomentado pelo IFAL(Instituto Federal de Alagoas).</p>
+                    <a class="linkExterno" target="_blank" href="https://www.google.com.br/">Ver Mais</a>
             </section>
         </div>
 
           <div>
             <section id="user">
+              <a name="use"></a>
                 <div class="tooltip titulo2">
                 <h2><span class="tooltiptext">Informações pessoais</span>Identificação</h2></div>
                 <h4 class="destaque">Nome</h4>
                 <p>Larah Karolyne Lira de Mendonça </p><br>
                 <h4 class="destaque">Nome em citações bibliográficas</h4>
                 <p>Mendonça, L. K. L. </p>
+                <a target="_blank" href="https://www.google.com.br/">Ver Mais</a>
             </section>
         </div>
 
           <div>
             <section id="map">
+              <a  name="mapa"></a>
                 <div class="tooltip titulo2">
                 <h2><span class="tooltiptext">Lugar onde reside</span>Endereço</h2></div>
                 <p>Rua João Jucá, Farol, <strong class="destaque">Maceió.</strong></p>
+                <a target="_blank" href="https://www.google.com.br/">Ver Mais</a>
               </section>
         </div>
             
           <div>
             <section id="grad">
+              <a  name="cap"></a>
                 <div class="tooltip titulo2">
                 <h2><span class="tooltiptext">Vida escolar</span>Formação acadêmica/titulação</h2></div>
                 <p><strong class="destaque">2018-2019</strong> <small>Ensino Médio (2º grau). <br> 
@@ -110,25 +131,30 @@
                   Universidade Federal de Pernambuco, UFPE, Brasil.</small></p><br>
                 <p><strong class="destaque">2025-2027</strong> <small>Mestrado em Direito. <br> 
                   Universidade Federal de Pernambuco, UFPE, Brasil.</small></p><br>
+                  <a target="_blank" href="https://www.google.com.br/">Ver Mais</a>
               </section>
         </div>
 
         <div>
             <section id="lang">
+              <a  name="lange"></a>
                 <div class="tooltip titulo2">
                 <h2><span class="tooltiptext">Línguas estrangeiras</span>Idiomas</h2></div>
                 <p><strong class="destaque">Inglês</strong> <small>Compreende Bem, Fala Bem, Escreve Bem.</small></p>
                 <p><strong class="destaque">Espanhol</strong> <small>Compreende Bem, Fala Pouco, Escreve Pouco.</small></p>
+                <a target="_blank" href="https://www.google.com.br/">Ver Mais</a>
               </section>
         </div>
 
         <div>
             <section id="prod">
+              <a name=produ></a>
                 <div class="tooltip titulo2">
                 <h2><span class="tooltiptext">Textos acadêmicas</span>Produções</h2></div>
                 <p>Projeto de pesquisa <strong class="destaque">PIBIC</strong><i> Uma crítica feminista aos neocontratualistas:
                   Pateman e Habermas."</i>
                 </p>
+                <a target="_blank" href="https://www.google.com.br/">Ver Mais</a>
               </section>
         </div>
 
