@@ -34,14 +34,10 @@ menuBar.forEach(item =>{
 
 function scrollSuave(event){
     var element = event.target;
-    var id = element.getAttribute('id');
-    console.log(id);
-    
-    if (id == null){
-        var id = element.getAttribute('href');
-    }
+    var idMenu = element.getAttribute('href');
+    console.log(idMenu);
 
-    var a = document.querySelector(id);
+    var a = document.querySelector(idMenu);
     console.log(a);
 
 }

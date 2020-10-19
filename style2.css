@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 body, p, h1, ul, li, section {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
   
 body {
@@ -19,10 +19,38 @@ a {
   
 img {
     max-width: 100%;
+    height:auto;
     width: 100%;
-	height:auto;
     
 }
+
+/*
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+// For desktop:
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  // For mobile phones: 
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+*/
 
 /* GRID GERAL */
 
@@ -60,6 +88,19 @@ img {
     ;
 }
 }
+
+@media screen and (max-width: 600px) {
+    .estrutura {
+        grid-template-columns: 100%; /* 1fr está bugando */
+        grid-template-areas:
+        "header"
+        "navbar"
+        "sidenav"
+        "content"
+        "footer"
+        ;
+    }
+  }
 
 .tooltip {
     position: relative;
@@ -190,7 +231,7 @@ img {
     background: #B07DFB;
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 
     .navbar{
         display: none;
@@ -217,6 +258,7 @@ img {
     font-family: 'Josefin Sans', sans-serif;
     padding: 10px 20px;
     text-decoration: none;
+    max-width: 100%;
 }
 
 .menu-item{
@@ -237,7 +279,20 @@ img {
 }
 
 
-@media screen and (max-width: 760px){
+
+@media only screen and (min-width: 1200px){
+    .menu-ul{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .menu-ul{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
     
     .menu-ul{
         display: flex;
@@ -253,6 +308,27 @@ img {
     }
 }
 
+@media only screen and (min-width: 600px){
+    .menu-ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .menu-ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
 
 /* SIDENAV */
 
@@ -263,9 +339,9 @@ img {
 }
 
 .profile {
-    display: flex !important;
+    display: flex;
     align-items: center;
-    
+    max-width: 170px;    
     
 }
 
@@ -273,11 +349,8 @@ img {
     display: block; 
     justify-content: center;
     align-items: center;
-    right: 0;
-    left: 50%;
     border-radius: 5px;
-    max-width: 400px;
-    height: auto;
+    width:100%;
 }
 
 @media (max-width: 760px) {
@@ -299,8 +372,7 @@ img {
 }
 
 .profile-img{
-    display: flex;
-    margin: 0 auto auto 100%;
+    width:100%;
     
 }
 }
