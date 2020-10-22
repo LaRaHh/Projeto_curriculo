@@ -375,7 +375,7 @@ p {
     padding: 20px;
 }
 
-@media (min-width: 640px) and (max-width: 768px){
+@media (min-width: 640px) and (max-width: 770px){
     
     .estrutura {
     
@@ -388,18 +388,257 @@ p {
         ;
     }
 
+    .header{
+        padding: 20px;
+    } 
+
     .logo {
         max-width: 70px;
         margin-right: auto;
     }
 
+    .navbar{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+    
+    .navbar > nav {
+        text-align: center;
+        position: relative;
+    }
+
    .navbar-item a{
-        margin: 20px 25px 20px 25px;
+        margin: 0;
    }
 
-   .profile-img{
-       display: initial;
-      align-items: flex-start;
-      text-align: start;
+   .navbar-item a{
+    margin: 20px 25px 20px 25px;
    }
+
+   .sidenav {
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+   .profile-img{
+       align-items: flex-start;
+       text-align: start;
+      
+   }
+
+   .titulo h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .content {
+        display: grid;
+        max-width: 900px;
+        grid-template-columns: 2fr;
+        grid-gap: 30px;
+        padding: 30px;
+    }
+
+    h2{
+        font-weight: larger;
+        font-size: 2em;
+        line-height: normal;
+        
+    }
+
+    p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .linkExterno{
+        font-weight: normal;
+        font-size: 1.5em;
+        max-width: 120px;
+        padding: 8px 20px 10px 20px;
+    }
 }
+
+@media (min-width: 770px) and (max-width: 1200px){
+    .estrutura {
+        display: grid;
+        
+        grid-template-columns: minmax(160px, 1fr) 5fr;
+        grid-template-areas:
+            "header header"
+            "navbar navbar"
+            "sidenav content"
+            "footer footer"
+        ;
+    }
+
+    .header {
+        padding: 30px;
+        grid-template-columns: 1fr auto;
+    }
+
+    .logo {
+        max-width: 85px;
+        margin-right: auto;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+    
+    .navbar > nav {
+        text-align: center;
+        position: relative;
+    }
+
+   .navbar-item a{
+        margin: 0;
+   }
+
+   .navbar-item a{
+    margin: 35px 45px 35px 50px;
+   }
+
+
+   .sidenav {
+    justify-content: center;
+    align-items: flex-start;
+
+    }
+
+    .profile-img{
+        align-items: flex-start;
+        text-align: start;
+        width: 150px;
+    
+    }
+
+    .titulo h1 {
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .content {
+        display: grid;
+        max-width: 900px;
+        grid-template-columns: 5fr;
+        grid-gap: 30px;
+        padding: 30px;
+    }
+
+    h2{
+        font-weight: larger;
+        font-size: 2em;
+        line-height: normal;
+        
+    }
+
+    p {
+        font-size: 1.6em;
+        line-height: 1.6;
+        letter-spacing: -.005em;
+    }
+
+    .linkExterno{
+        font-size: 1.6em;
+        max-width: 120px;
+    }
+
+    
+}
+
+@media (min-width:1200px){
+    .estrutura {
+        display: grid;
+        
+        grid-template-columns: minmax(160px, 1fr) 5fr;
+        grid-template-areas:
+            "header header"
+            "navbar navbar"
+            "sidenav content"
+            "footer footer"
+        ;
+    }
+
+    .header {
+        padding: 30px;
+        grid-template-columns: 1fr auto;
+    }
+
+    .logo {
+        max-width: 85px;
+        margin-right: auto;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+    
+    .navbar > nav {
+        text-align: center;
+        position: relative;
+    }
+
+   .navbar-item a{
+        margin: 0;
+   }
+
+   .navbar-item a{
+    margin: 35px 75px 35px 70px;
+   }
+
+
+   .sidenav {
+    justify-content: center;
+    align-items: flex-start;
+
+    }
+
+    .profile-img{
+        align-items: flex-start;
+        text-align: start;
+        width: 150px;
+    
+    }
+
+    .titulo h1 {
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .content {
+        display: grid;
+        max-width: 900px;
+        grid-template-columns: 5fr;
+        grid-gap: 30px;
+        padding: 30px;
+    }
+
+    h2{
+        font-weight: larger;
+        font-size: 2em;
+        line-height: normal;
+        
+    }
+
+    p {
+        font-size: 1.6em;
+        line-height: 1.6;
+        letter-spacing: -.005em;
+    }
+
+    .linkExterno{
+        font-size: 1.6em;
+        max-width: 120px;
+    }
+}
+
