@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações pessoais</title>
+    <meta name="description" content="Currículo estudantil, Larah Karolyne Lira de Mendonça, Informações pessoais">
+    <meta name="keywords" content="Currículo, estudantil, Informações pessoais, IFAL"> 
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="Larah Lira"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="estilo-infoPessoal.css">
+</head>
+
+<body>
+    <div class="estrutura">
+        <header class="header">
+            <nav id="menu" class="menu">
+                <a href="https://wlcsolucoes.com.br/" target="blank" class="logo">
+                    <img src="img/logo.jpg" alt="WLCsoluções"></a>
+            </nav>
+        </header>
+
+        <div class="info">
+            <h1>Informações pessoais</h1>
+            <h2>Nome:</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <h2>CPF:</h2>
+            <p>123.456.789-00</p>
+            <h2>Data de nascimento:</h2>
+            <input type="date" name="data-nascimento" id="data-nasc">
+            <h2>Peso/altura/IMC:</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> 
+        </div>
+
+        <table class="tabela-calculadora" cellspacing="0">
+            <thead>
+                <tr>
+                    <td class="titulo-tabela" colspan="3"> Veja a interpretação do IMC :</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="campos-tabela">
+                    <td>IMC</td>
+                    <td>Classificação</td>
+                    <td style="text-align: center">
+                    "Obesidade" <small>(grau)</small></td>
+                </tr>
+                <tr class="linha-1">
+                    <td>Menor que 18,5</td>
+                    <td>Magreza</td>
+                    <td style="text-align: center">0</td>
+                </tr>
+                <tr class="linha-2">
+                    <td>Entre 25 e 29,9</td>
+                    <td>Sobrepeso</td>
+                    <td style="text-align: center">I</td>
+                </tr>
+                <tr class="linha-3">
+                    <td>Entre 30 e 39,9</td>
+                    <td>Obesidade</td>
+                    <td style="text-align: center">II</td>
+                </tr>
+                <tr class="linha-4">
+                    <td>Maior que 40</td>
+                    <td>Obesidade Grave</td>
+                    <td style="text-align: center">III</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <form action="" name="calc">
+            <div class="calculadora">
+                <legend>Calculadora de IMC :</legend>
+                <div id="primeira-linha">
+                    <input type="text" name="altura" id="altura" placeholder="Sua altura(metros)">
+                </div>
+                <div id="segunda-linha">
+                    <input type="text" name="peso" id="peso" placeholder="Seu peso(quilogramas)">
+                </div>
+                <div id="terceira-linha">
+                    <input type="button" value="Calcular" class="botao-calcula">
+                </div>
+                <div id="quarta-linha">
+                    <input type="text" name="imc" value=" Seu IMC:" id="imc" readonly>
+                </div>
+            </div>
+        </form>
+
+    <footer class="footer">
+        <p>Outubro de 2020.</p>
+    </footer>
+
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
