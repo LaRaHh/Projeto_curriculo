@@ -1,0 +1,228 @@
+/* RESET */
+body, div, nav, a, button, header, p,input, img, h1, h2, ul, li, footer, select, aside {
+    margin: 0;
+    padding: 0;
+    
+    
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* BASE STYLES */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 62.5%;
+}
+  
+li {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+}
+
+/* GRID */
+.estrutura{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "content content aside"
+    "footer footer footer";
+}
+
+/* HEADER */
+.header {
+    display: grid;
+    grid-area: header;
+    background: linear-gradient(135deg, #1E90FF, #87CEEB);
+    padding: 30px;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.logo {
+    margin-right: auto;
+    max-width: 55px;
+    
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 0.8em;
+    background: rgba(0,0,0,.1);
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.header nav a:hover {
+    background: rgba( 0, 0, 0, 0.3);
+}
+
+.display{
+    float: right;
+    font-weight: normal;
+    font-size: 1.5em;
+	max-width: 100px;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px;
+	text-transform: uppercase;
+	background-image: linear-gradient(135deg, #221eff, #5e74b9);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.89);
+}
+
+/* CONTENT */
+
+.content {
+    display: grid;
+    grid-area: main;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    grid-gap: 30px;
+}
+
+/* ESTILOS DO CONTENT */
+
+h1{
+    font-weight: bold;
+    font-size: 2.4em;
+    line-height: normal;
+}
+
+h2{
+    font-weight: larger;
+    font-size: 2em;
+    line-height: normal;
+    
+}
+
+p {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.content div{
+    margin: 0 0 10px 0 ;
+}
+
+.content div p{
+    margin: 0 0 10px 0 ;
+}
+
+/*ASIDE*/
+.aside {
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: hsla(214, 30%, 22%, 0.396);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.aside .hh-min h2{
+    padding: 20px;
+    align-items: center;
+}
+
+.aside .hh-min input{
+    padding: 10px;
+    margin-left: 100px;
+}
+.aside .botoes{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+button{
+    display: inline-block;
+    
+    font-weight: normal;
+    font-size: 1em;
+	max-width: 80px;
+    text-align: center;
+    justify-content: center;
+	text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+	text-transform: uppercase;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.89);
+    cursor: pointer;
+}
+
+#limpar{
+    background: linear-gradient(135deg, #606363, #dfe1e7);
+}
+
+#limpar:hover{
+    background: linear-gradient(135deg,  #838383, #dfe1e7);
+}
+
+#comecar{
+    background: linear-gradient(135deg, #221eff, #5e74b9);
+}
+
+#comecar:hover{
+    background: linear-gradient(135deg, #1e8fff8e, #87CEEB);
+}
+
+#pausar{
+    background-image: linear-gradient(135deg, #ffd900, #dceb87);
+}
+
+#pausar:hover{
+    background: linear-gradient(135deg, #ffd900b9, #dceb87ad);
+}
+
+#parar{
+    background-image: linear-gradient(135deg, #ff0000, #eb8787);
+}
+
+#parar:hover{
+    background: linear-gradient(135deg, #ff0000a9, #eb8787b0);
+}
+
+#regressivo{
+    background: linear-gradient(135deg, #1ff053, #8fce76f8);
+}
+
+#regressivo:hover{
+    background: linear-gradient(135deg, #1ff053a6, #8fce76c5);
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    grid-template-columns: 1fr auto;
+    background: linear-gradient(135deg, #1E90FF, #87CEEB);
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}

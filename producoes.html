@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produções</title>
+    <meta name="description" content="Produções estudantis, Larah Karolyne Lira de Mendonça">
+    <meta name="keywords" content="Currículo, estudantil,Produções, IFAL">
+    <meta name="author" content="Larah Lira">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilo-producoes.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/a8a91172f5.js"></script>
+</head>
+
+<body>
+    <audio id="sound" src="sons/alarme.mp3" style="display: none;"></audio>
+    
+    <div class="container">
+        
+        <header class="header">
+            <nav id="menu" class="menu">
+                <a href="https://wlcsolucoes.com.br/" target="blank" class="logo">
+                    <img src="img/logo.jpg" alt="WLCsoluções"></a>
+            </nav>
+            <div class="display" id="display">00:00:00</div>
+        </header>
+
+        <aside class="aside">
+                <div class="hh-min">
+                    <h2>Digite um horário (hora:minuto)</h2>
+                    <input type="time" name="tempoInput" id="tempoInput" step="1">
+                    <button id="limpar" onclick="limpar()">Limpar</button>
+                </div>
+                <div class="botoes">
+                    <button id="comecar" onclick="start();">Começar</button>
+                    <button id="pausar" onclick="pause();">Pausar</button>
+                    <button id="parar" onclick="stop();">Parar</button>
+                    <button id="regressivo" onclick="regressivo();">Regressivo</button>
+                </div>
+                
+            
+        </aside>
+        
+        
+        <div class="content">
+            <h1>Produções Acadêmicas</h1>
+            <h2>Projeto PIBIC 2019</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo quis odit optio minus voluptate placeat iure ullam obcaecati. Excepturi vitae tempore maxime accusamus totam, sequi officia velit? Rem, itaque!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis, reiciendis amet sed quod ducimus. Distinctio reiciendis, minus dolore libero molestias rem ea vitae quod soluta illo ipsum quam aperiam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati commodi, tempora dignissimos provident eos dolorum suscipit debitis dolor aut eius hic, dicta cum possimus molestiae magnam non deleniti, laudantium sint.</p>
+
+            <h2>Projeto PIBIC 2020</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo quis odit optio minus voluptate placeat iure ullam obcaecati. Excepturi vitae tempore maxime accusamus totam, sequi officia velit? Rem, itaque!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis, reiciendis amet sed quod ducimus. Distinctio reiciendis, minus dolore libero molestias rem ea vitae quod soluta illo ipsum quam aperiam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati commodi, tempora dignissimos provident eos dolorum suscipit debitis dolor aut eius hic, dicta cum possimus molestiae magnam non deleniti, laudantium sint.</p>
+
+            <h2>Projeto PIBIT 2020</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo quis odit optio minus voluptate placeat iure ullam obcaecati. Excepturi vitae tempore maxime accusamus totam, sequi officia velit? Rem, itaque!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis, reiciendis amet sed quod ducimus. Distinctio reiciendis, minus dolore libero molestias rem ea vitae quod soluta illo ipsum quam aperiam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati commodi, tempora dignissimos provident eos dolorum suscipit debitis dolor aut eius hic, dicta cum possimus molestiae magnam non deleniti, laudantium sint.</p>
+        </div>
+        
+        <footer class="footer">
+            <p>Outubro de 2020.</p>
+        </footer>
+    </div>
+    <script src="apps/producoes.js"></script>
+</body>
+
+</html>
