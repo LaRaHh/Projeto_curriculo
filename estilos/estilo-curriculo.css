@@ -175,7 +175,7 @@ img {
 @media (max-width: 620px){
     
     .menu-ul{
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: space-between;
         padding: 0;
@@ -398,11 +398,11 @@ p {
     } 
 
     .menu-ul{
-        display: none !important;
+        display: none ;
     }
     
     .menu-ul li a{
-        display: none !important;
+        display: none ;
 
     }
 

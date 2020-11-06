@@ -70,21 +70,22 @@ function scrollSuaveImg(){
 
 //Animação do menu toggle
 
-
 const menuH = document.getElementById('hamburguer');
 const menuUL = document.getElementById('menu-ul');
 menuH.addEventListener('click', () => {
-    /*altura = window.screen.height;
-    largura = window.screen.width;
-
-    if (largura <= 620){
-        menuUL.classList.toggle('menu-ul');
-    }else{
-        menuUL.classList.remove('menu-ul')
-    }*/
+    
     menuUL.classList.toggle('menu-ul');
     
 });
+
+menuUL.addEventListener('mouseover', () => {
+    let largura = window.screen.width;
+    
+    if (largura > 620){
+        console.log("aaaaaaa");
+        menuUL.classList.add('menu-ul');
+    }
+})
 
 
 //Animação do título typeWriter

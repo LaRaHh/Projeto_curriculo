@@ -435,7 +435,7 @@ div#quarta-linha input:nth-child(1){
 }
 
 
-@media screen and (min-width: 1024px){
+@media (min-width: 1024px) and (max-width: 2000px) {
     .estrutura{
         display: grid;
         grid-template-columns: 4fr 4fr;

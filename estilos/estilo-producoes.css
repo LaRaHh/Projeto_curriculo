@@ -46,6 +46,7 @@ img {
     grid-template-columns: 1fr auto;
     align-items: center;
 }
+
 .logo {
     margin-right: auto;
     max-width: 55px;
@@ -91,7 +92,7 @@ img {
 .content {
     display: grid;
     grid-area: main;
-    max-width: 900px;
+    max-width: 1fr;
     margin: 0 auto;
     padding: 30px;
     grid-gap: 30px;
@@ -225,4 +226,87 @@ button{
     color: white;
     text-align: center;
     padding: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .estrutura{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "content"
+    "footer";
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .display{
+        font-size: 1em;
+        padding: 10px;
+    }
+    
+    .footer p {
+        padding: 20px;
+    }
+
+    .content {
+        margin: 0 auto;
+        padding: 30px;
+        grid-gap: 30px;
+    }
+    
+    /* ESTILOS DO CONTENT */
+    
+    h1{
+        font-weight: bold;
+        font-size: 2em;
+        line-height: normal;
+    }
+    
+    h2{
+        font-weight: larger;
+        font-size: 1.6em;
+        line-height: normal;
+        
+    }
+    
+    p {
+        color: rgba(0, 0, 0, 0.7);
+        text-align: justify;
+        font-weight: normal;
+        font-size: 1em;
+    }
+    
+    .aside {
+        grid-gap: 20px;
+        padding: 40px;
+    }
+    
+    .aside .hh-min h2{
+        padding: 20px;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+    
+    .aside .hh-min input{
+        padding: 5px;
+        margin-left: 50px;
+    }
+    .aside .botoes{
+        padding: 10px;
+
+    }
+    
+    button{
+        display: inline-block;
+        font-weight: normal;
+        font-size: 1em;
+        max-width: 80px;
+        padding: 8.5px;
+        margin: 5px;
+    }
 }

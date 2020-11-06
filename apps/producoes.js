@@ -77,6 +77,7 @@ function timer() {
     return format;
 }
 
+//O regressivo pega apenas o número do input, não o do display
 function regressivo() {
     
     hh = parseInt(inputHorario.value.substring(0,2));
@@ -88,7 +89,8 @@ function regressivo() {
     function timerInverso(){
     
         ss--;
-        if (ss == 00) { 
+
+        if (ss <= 00) { 
             ss = 59; 
             mm--; 
 
@@ -96,7 +98,13 @@ function regressivo() {
                 mm = 59;
                 hh--;
             }
+
+            if (ss == 00 || mm == 00 || hh == 0){
+                stop();
+                document.getElementById("sound").play();
+            }
         }
+
         //Cria uma variável com o valor tratado HH:MM:SS
         let format = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
         
